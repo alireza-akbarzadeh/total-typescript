@@ -74,5 +74,7 @@ This workshop empowers developers to combine React and TypeScript effectively. I
 You can set it to show Context Menu by pressing the shortcut key.
 Got it
 Go to Settings
-awesome work by @mattpocock
+
+
+##awesome work by @mattpocock
 https://github.com/orgs/total-typescript/repositories?type=all
