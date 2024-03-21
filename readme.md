@@ -1,60 +1,78 @@
-<a href="https://totaltypescript.com/tutorials/react-with-typescript"><img src="https://res.cloudinary.com/total-typescript/image/upload/v1683647787/react-with-typescript_p2dgf5.png" alt="React with TypeScript, tutorial by Matt Pocock" /></a>
+[![Become the TypeScript Wizard at Your Company](https://res.cloudinary.com/total-typescript/image/upload/v1709296542/github-org-banner_2x_xyab90.jpg)](https://totaltypescript.com/newsletter)
+[TotalTypeScript.com](https://totaltypescript.com)
 
-## Quickstart
+# Become the TypeScript Wizard at Your Company
 
-Clone this repo or [open in Gitpod](https://gitpod.io/#https://github.com/total-typescript/react-typescript-tutorial).
+Total TypeScript is suitable for any developer who is ready to work at becoming a wizard, though some basic familiarity with TypeScript is recommended.
 
-```sh
-# Installs all dependencies
-npm install
+The Type Transformations workshop begins by warming you up with exercises on basic inference and essential types.
 
-# Starts the first exercise
-npm run exercise 01
+Then nearly 150 exercises later, the Advanced TypeScript Patterns workshop will have you creating chainable method abstractions with generics and the builder pattern.
 
-# Runs linting and tests on the solution
-npm run solution 01
-```
+Check out the free <a href="https://totaltypescript.com/tutorials/beginners-typescript">Beginner's Tutorial</a> to set a foundation and get an idea for the workshop's teaching approach.
 
-## How to take the course
+<br/>
 
-You'll notice that the course is split into exercises. Each exercise is split into a `*.problem.ts` and a `*.solution.ts`.
+## Professional TypeScript Workshops
 
-To take an exercise:
+<a href="https://totaltypescript.com/workshops/type-transformations"><img src="https://res.cloudinary.com/total-typescript/image/upload/v1669368980/type-transformations-workshop/type-transformations-illustration_fxedc0.png" width="200" alt="Type Transformations Workshops"/></a>
 
-1. Go into `*.problem.ts`
-2. Run `npm run exercise 01`, where `01` is the number of the exercise you're on.
+## Type Transformations
 
-The `exercise` script will run TypeScript typechecks and a test suite on the exercise.
+### Wield the power of transformation to move from one type to another with ease
 
-This course encourages **active, exploratory learning**. In the video, I'll explain a problem, and **you'll be asked to try to find a solution**. To attempt a solution, you'll need to:
+Many problems in TypeScript come down to transforming types into other types.
 
-1. Check out [TypeScript's docs](https://www.typescriptlang.org/docs/handbook/intro.html) or the [React TypeScript cheatsheet](https://react-typescript-cheatsheet.netlify.app/)
-1. Try to find something that looks relevant.
-1. Give it a go to see if it solves the problem.
+This workshop is your first step on the path to wizardry with topics including unions, template literals, conditional types and mapped types. You'll also see how to take advantage of inference and type helpers to ensure you retain flexibility while ensuring your types are exactly how you expect them to be.
 
-You'll know if you've succeeded because the tests will pass.
+<a href="https://totaltypescript.com/workshops/type-transformations">Learn Type Transformations ↗︎</a>
 
-**If you succeed**, or **if you get stuck**, unpause the video and check out the `*.solution.ts`. You can see if your solution is better or worse than mine!
+<br/>
 
-You can run `npm run solution 01` to run the tests and typechecking on the solution.
+<a href="https://totaltypescript.com/workshops/typescript-generics"><img src="https://res.cloudinary.com/total-typescript/image/upload/v1682599825/typescript-generics_zijmdd.png" width="200" alt="TypeScript Generics"/></a>
 
-## Acknowledgements
+## TypeScript Generics
 
-Say thanks to Matt on [Twitter](https://twitter.com/mattpocockuk) or by joining his [Discord](https://discord.gg/8S5ujhfTB3). Consider signing up to his [Total TypeScript course](https://totaltypescript.com).
+### Unlock amazing inference in the functions you create and the abstractions you build
 
-## Reference
+Generics are one of TypeScript's most complex and intimidating features.
 
-### `npm run exercise 01`
+Getting good at generics requires deep knowledge of the TypeScript Compiler, as well as an understanding of how their placement impacts their usefulness.
 
-Alias: `npm run e 01`
+You'll practice with using generics in a variety of situations, as well as how to use function overloads when generics aren't the best fit.
 
-Run the corresponding `*.problem.ts` file.
+<a href="https://totaltypescript.com/workshops/typescript-generics">Learn TypeScript Generics ↗︎</a>
 
-### `npm run solution 01`
+<br/>
 
-Alias: `npm run s 01`
+<a href="https://totaltypescript.com/workshops/advanced-typescript-patterns"><img src="https://res.cloudinary.com/total-typescript/image/upload/v1682600137/advanced-typescript-patterns_tm9vzh.png" width="200" alt="TypeScript Generics"/></a>
 
-Run the corresponding `*.solution.ts` file. If there are multiple, it runs only the first one.
+## Advanced TypeScript Patterns
 
+### Become fluent in TypeScript's undocumented patterns
+
+The TypeScript community has discovered and iterated upon several patterns that build on the type transformation and generics techniques explored in the earlier workshops.
+
+Here you'll grow more powerful through practice with branded types and the builder pattern, among others. You will also discover the best practices for strongly typing the global scope and how to understand the flow of generics through external libraries.
+
+<a href="https://totaltypescript.com/workshops/advanced-typescript-patterns">Level Up ↗︎</a>
+
+<br/>
+
+<a href="https://totaltypescript.com/workshops/advanced-react-with-typescript"><img src="https://res.cloudinary.com/total-typescript/image/upload/v1709297029/module--advanced-react-with-typescript_mhnvwh.png" width="200" alt="TypeScript Generics"/></a>
+
+## Advanced React with TypeScript
+
+### Expert-level knowledge for typing your React apps with TypeScript
+
+Using TypeScript with React can be tricky, requiring flexible, type-safe, and structured components.
+
+This workshop empowers developers to combine React and TypeScript effectively. It covers advanced props handling, leveraging TypeScript generics for components and hooks, safer React hooks using types, understanding the TypeScript type system, recognizing industry-standard patterns, and safely integrating external libraries into React components.
+
+<a href="https://totaltypescript.com/workshops/advanced-react-with-typescript">Combine React and TypeScript effectively ↗︎</a>
+
+You can set it to show Context Menu by pressing the shortcut key.
+Got it
+Go to Settings
 awesome work by @mattpocock
 https://github.com/orgs/total-typescript/repositories?type=all
