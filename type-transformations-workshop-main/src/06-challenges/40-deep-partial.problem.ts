@@ -1,6 +1,8 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
-type DeepPartial<T> = unknown;
+type DeepPartial<T> = {
+  [Key in keyof T]?: DeepPartial<T[Key]>;
+};
 
 type MyType = {
   a: string;

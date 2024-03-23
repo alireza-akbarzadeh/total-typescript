@@ -1,3 +1,4 @@
+import { never } from "zod";
 import { Equal, Expect } from "../helpers/type-utils";
 
 const getServerSideProps = async () => {
@@ -10,7 +11,13 @@ const getServerSideProps = async () => {
   };
 };
 
-type InferPropsFromServerSideFunction = unknown;
+type InferPropsFromServerSideFunction<T> = T extends () => Promise<{
+  props: infer U;
+}>
+  ? U
+  : never;
+
+type ServerProps = InferPropsFromServerSideFunction<typeof getServerSideProps>;
 
 type tests = [
   Expect<

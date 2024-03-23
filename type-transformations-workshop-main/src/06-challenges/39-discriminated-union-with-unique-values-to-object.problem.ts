@@ -12,7 +12,11 @@ type Route =
   | { route: "/admin" }
   | { route: "/admin/users" };
 
-type RoutesObject = unknown;
+type RoutesObject = {
+  [Key in Route as Key["route"]]: Key extends { search: infer Obj }
+    ? Obj
+    : never;
+};
 
 type tests = [
   Expect<
@@ -28,5 +32,5 @@ type tests = [
         "/admin/users": never;
       }
     >
-  >,
+  >
 ];
