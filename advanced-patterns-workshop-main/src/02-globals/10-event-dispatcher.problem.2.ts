@@ -1,5 +1,3 @@
-import { expect, it } from "vitest";
-
 /**
  * How do we add a LOG_OUT and UPDATE_USERNAME events to the
  * DispatchableEvent interface from WITHIN

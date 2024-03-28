@@ -22,7 +22,14 @@ interface Post {
  * You'll need an index signature of some kind - or maybe
  * two!
  */
-const db: Record<string, User | Post> = {};
+
+//? Variable type annotation
+// This annotation tells the variable what type it should b
+
+const db: {
+  [postId: PostId]: Post;
+  [userId: UserId]: User;
+} = {};
 
 it("Should let you add users and posts to the db by their id", () => {
   const postId = "post_1" as PostId;
@@ -43,7 +50,7 @@ it("Should let you add users and posts to the db by their id", () => {
 
   type tests = [
     Expect<Equal<typeof post, Post>>,
-    Expect<Equal<typeof user, User>>,
+    Expect<Equal<typeof user, User>>
   ];
 });
 

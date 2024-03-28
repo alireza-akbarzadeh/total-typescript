@@ -1,10 +1,22 @@
 import { describe, expect, it } from "vitest";
 import { Brand } from "../helpers/Brand";
 
+//? Function return type
+// This is a function return type. It tells the function what type it should return.
+// Learn More | Mark as Learned
+
 type Password = Brand<string, "Password">;
 type Email = Brand<string, "Email">;
 
-export const validateValues = (values: { email: string; password: string }) => {
+type TReturnType = {
+  email: Email;
+  password: Password;
+};
+
+export const validateValues = (values: {
+  email: string;
+  password: string;
+}): TReturnType => {
   if (!values.email.includes("@")) {
     throw new Error("Email invalid");
   }
@@ -13,8 +25,8 @@ export const validateValues = (values: { email: string; password: string }) => {
   }
 
   return {
-    email: values.email,
-    password: values.password,
+    email: values.email as Email,
+    password: values.password as Password,
   };
 };
 
