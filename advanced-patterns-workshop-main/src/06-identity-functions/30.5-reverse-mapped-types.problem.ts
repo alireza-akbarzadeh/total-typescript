@@ -1,6 +1,10 @@
+import { T } from "ts-toolbelt";
 import { Equal, Expect } from "../helpers/type-utils";
+import { K } from "vitest/dist/global-60f880c6";
 
-export function makeEventHandlers(obj: unknown) {
+export function makeEventHandlers<T>(obj: {
+  [K in keyof T]: (args: K) => void;
+}) {
   return obj;
 }
 
