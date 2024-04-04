@@ -6,5 +6,6 @@ const returnWhatIPassIn = <T>(t: T) => {
 
 const one = returnWhatIPassIn(1);
 const matt = returnWhatIPassIn("matt");
+const is = returnWhatIPassIn(false);
 
 type tests = [Expect<Equal<typeof one, 1>>, Expect<Equal<typeof matt, "matt">>];

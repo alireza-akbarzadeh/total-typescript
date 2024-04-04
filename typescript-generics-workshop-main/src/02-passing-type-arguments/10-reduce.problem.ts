@@ -1,5 +1,6 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
+import { T } from "ts-toolbelt";
 
 const array = [
   {
@@ -10,7 +11,7 @@ const array = [
   },
 ];
 
-const obj = array.reduce((accum, item) => {
+const obj = array.reduce<Record<string, { name: string }>>((accum, item) => {
   accum[item.name] = item;
   return accum;
 }, {});
