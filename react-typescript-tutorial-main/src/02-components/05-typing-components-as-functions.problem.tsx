@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 
 interface Props {
   className: string;
 }
 
 /* @ts-expect-error */
-export const Button = (props: Props) => {
+export const Button: FC<Props> = (props) => {
   return {
     ohDear: "123",
   };

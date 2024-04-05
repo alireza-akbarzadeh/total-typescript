@@ -1,14 +1,22 @@
 import { it } from "vitest";
 
-interface Events {
-  click: {
-    x: number;
-    y: number;
-  };
-  focus: undefined;
-}
+type ClickPayload = {
+  x: number;
+  y: number;
+  c: number;
+};
 
-export const sendEvent = (event: keyof Events, ...args: any[]) => {
+type Events =
+  | {
+      type: "click";
+      click: ClickPayload;
+    }
+  | { type: "focus"; focus: undefined };
+
+export const sendEvent = <T extends Events["type"]>(
+  event: T,
+  ...args: T extends "click" ? [ClickPayload] : []
+) => {
   // Send the event somewhere!
 };
 
@@ -32,6 +40,7 @@ it("Should force you to pass a second argument when you choose an event with a p
   sendEvent("click", {
     x: 1,
     y: 2,
+    c: 4,
   });
 });
 
