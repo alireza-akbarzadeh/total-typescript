@@ -1,7 +1,14 @@
 import { it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
+import { T } from "ts-toolbelt";
 
 // You'll need to use function overloads to figure this out!
+function useData<T>(params: { fetchData: () => Promise<T> }): {
+  getData: () => T | undefined;
+};
+function useData<T>(params: { fetchData: () => Promise<T>; initialData: T }): {
+  getData: () => T;
+};
 function useData<T>(params: { fetchData: () => Promise<T>; initialData?: T }): {
   getData: () => T | undefined;
 } {

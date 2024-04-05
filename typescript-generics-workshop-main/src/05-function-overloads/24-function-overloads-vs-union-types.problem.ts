@@ -1,7 +1,13 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
-function runGenerator(generator: unknown) {
+interface IRunGenerator {
+  run: () => string;
+}
+
+function runGenerator(generator: IRunGenerator["run"]): string;
+function runGenerator(generator: IRunGenerator): string;
+function runGenerator(generator: IRunGenerator | IRunGenerator["run"]) {
   if (typeof generator === "function") {
     return generator();
   }
